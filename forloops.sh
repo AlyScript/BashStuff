@@ -1,9 +1,5 @@
 #!/bin/bash
 
-for n in {1..10}
-do
-   echo $n
-   sleep 1
+for file in logfiles/*.log
+do tar -czvf $file.tar.gz $file
 done
-
-echo "End of for loop."
